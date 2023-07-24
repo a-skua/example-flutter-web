@@ -54,7 +54,7 @@ class _StateMainApp extends State<MainApp> {
               controller: _controller,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                hintText: 'Message',
+                label: Text('Message'),
               ),
             ),
           ),

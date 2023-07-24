@@ -38,11 +38,12 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script type="module" src="./md.js"></script>
 </head>
 <body>
   <div id="app" style="border: solid 1px; width: 400px; height: 300px;"></div>
   <p>
-    <input type="text" id="input" placeholder="Message">
+    <md-outlined-text-field label="Message" type="text" id="input"></md-outlined-text-field>
   </p>
   <script type="module">
       window._init = function() {
