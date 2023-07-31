@@ -39,11 +39,15 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
   <script type="module" src="./md.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="app" style="border: solid 1px; width: 400px; height: 300px;"></div>
-  <p>
-    <md-outlined-text-field label="Message" type="text" id="input"></md-outlined-text-field>
+  <div id="app" style="border: solid 1px; width: 400px; height: 300px; box-sizing: border-box;"></div>
+  <p id="web" style="border: solid 1px; width: 400px; padding: 20px; box-sizing: border-box; display: flex;">
+    <md-outlined-text-field label="Message" type="text" id="input" style="flex: 1;"></md-outlined-text-field>
   </p>
   <script type="module">
       window._init = function() {
